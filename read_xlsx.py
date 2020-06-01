@@ -2,10 +2,13 @@ from openpyxl import load_workbook
 from konlpy.tag import Kkma
 import collections
 import numpy as np
-import matplotlib
+import copy
 import matplotlib.pyplot as plt
-from matplotlib import font_manager, rc
-
+from wordcloud import WordCloud
+from os import path
+from PIL import Image
+import numpy as np
+import os
 
 read_workbook = load_workbook("./bluehouse.xlsx")
 read_cell = read_workbook.active
@@ -30,11 +33,12 @@ for i in list_temp:
     else:
         result_list.append(i)
 
-#print(collections.Counter(result_list))
-#print(collections.Counter(result_list).most_common(5))  # 상위 5개
+copy_list = copy.deepcopy(result_list)
+# print(collections.Counter(result_list))
+# print(collections.Counter(result_list).most_common(5))  # 상위 5개
 result_list = dict(collections.Counter(result_list).most_common(20))  # 상위 20개
 
-# 시각화
+# 시각화(막대 그래프)
 # 문자, 숫자 분리 (그래프를 그리기 위해서)
 list_string = []
 list_number = []
@@ -53,4 +57,17 @@ plt.xlabel("x-label")
 plt.ylabel("y-label")
 plt.xticks(index, label)
 plt.xticks(rotation=60)
+plt.show()
+
+# 시각화(wordcloud) - 문자열 형태로 넘겨주면 알아서 잘라서 만들어준다.
+last_text = ""
+for i in copy_list:
+    last_text = last_text + " " + i
+d = path.dirname(__file__) if "__file__" in locals() else os.getcwd()
+mask = np.array(Image.open(path.join(d, './img/cloud.png')))  # 마스크 없으면 기본 wordcloud 제공
+#wordcloud = WordCloud(font_path="C:/WINDOWS/FONTS/NANUMGOTHIC.TTF", background_color="white", mask=mask, ).generate(last_text)
+wordcloud = WordCloud(font_path="C:/WINDOWS/FONTS/NANUMGOTHIC.TTF").generate(last_text)
+plt.figure(figsize=(12, 12))
+plt.imshow(wordcloud, interpolation="bilinear")
+plt.axis("off")
 plt.show()
