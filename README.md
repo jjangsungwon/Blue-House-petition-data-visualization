@@ -34,11 +34,11 @@
 
 ## 구현 결과
 
-![wordcloud-1](C:\Users\sw\Documents\Blue-House-petition-data-visualization\img\wordcloud-cloud(white).png)
+![wordcloud-1](https://github.com/jjangsungwon/Blue-House-petition-data-visualization/tree/master/img/wordcloud-cloud(white).png)
 
 <br>
 
-![wordcloud-2](C:\Users\sw\Documents\Blue-House-petition-data-visualization\img\wordcloud-default.png)
+![wordcloud-2](https://github.com/jjangsungwon/Blue-House-petition-data-visualization/tree/master/img/wordcloud-default.png)
 
 <br>
 
