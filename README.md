@@ -15,7 +15,7 @@
 3. 자연어 처리
    - KoNLPy를 이용하여 제목을 단어 단위로 분리한다.
 4. 시각화
-   - matplotlib와 Count를 활용하여 막대 그래프를 그린다.
+   - matplotlib와 Counter를 활용하여 막대 그래프를 그린다.
    - Wordcloud를 활용하여 Wordcloud를 그린다.
 
 <br>
