@@ -34,8 +34,8 @@
 
 ## 구현 결과
 
-![wordcloud-1](https://github.com/jjangsungwon/Blue-House-petition-data-visualization/blob/master/img/wordcloud-cloud(white).png?raw=true)
-![wordcloud-2](https://github.com/jjangsungwon/Blue-House-petition-data-visualization/blob/master/img/wordcloud-default.png?raw=true)
+![wordcloud-1](https://github.com/jjangsungwon/Blue-House-petition-data-visualization/blob/master/img/wordcloud-cloud(white).png?raw=true {width=40px height=400px})
+![wordcloud-2](https://github.com/jjangsungwon/Blue-House-petition-data-visualization/blob/master/img/wordcloud-default.png?raw=true {width=40px height=400px})
 
 <br>
 
