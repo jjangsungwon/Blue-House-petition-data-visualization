@@ -10,12 +10,12 @@
 1. Crawling 
    - 추천순 목록  1 ~ 10 페이지에 해당하는 청원의 제목 정보를 가져온다.
    - BeautifulSoup, selenium, webdriver 사용
-2. 파일 쓰기
-   - openpyxl를 이용하여 제목 정보를 엑셀(xlsx)에 저장한다.
+2. 파일 쓰기, 읽기
+   - openpyxl를 이용하여 제목 정보를 엑셀(xlsx)에 저장하고 읽는다.
 3. 자연어 처리
    - KoNLPy를 이용하여 제목을 단어 단위로 분리한다.
 4. 시각화
-   - matplotlib과 Counter를 활용하여 막대그래프를 그린다.
+   - matplotlib와 Counter를 활용하여 막대그래프를 그린다.
    - Wordcloud를 활용하여 Wordcloud를 그린다.
 
 <br>
