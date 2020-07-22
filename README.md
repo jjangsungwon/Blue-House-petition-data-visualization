@@ -34,10 +34,3 @@
 
 ## 구현 결과
 ![result](https://github.com/jjangsungwon/Blue-House-petition-data-visualization/blob/master/img/result.png?raw=true)
-
-<br>
-
-## 추후 계획
-
-현재는 크롤링을 구현한 것이 아니라 스크래핑을 구현한 상황이다.
-따라서 github action을 통해 자동으로 크롤링을 하도록 하여 주기적으로 주요 이슈들을 파악할 수 있도록 할 예정이다.
